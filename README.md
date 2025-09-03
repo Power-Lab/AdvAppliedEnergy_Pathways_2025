@@ -1,5 +1,5 @@
 # 1. Overview for the China RE Pathways Project
-This repository contains the renewable capacity expansion model for China's power sector for the study **"Temporal Limitations of China's Renewable Energy Scale-Up"**. The model is written using [Python](https://www.python.org/).
+This repository contains the renewable capacity expansion model for China's power sector for the study **"Reaching Carbon Neutrality in China: Temporal and Subnational Limitations of Renewable Energy Scale-Up"**. The model is written using [Python](https://www.python.org/).
 
 You can use the model for conducting both single-year snapshot analysis and multi-year pathway study. In the multi-year scenario, if the outputs from the last period are missing, the model will use the existing default inputs as the intial conditions.
 
@@ -31,7 +31,7 @@ Make sure that you have a valid Gurobi license for using the Gurobi optimization
 
 
 # 3. Installation guide
-The installation consists of two parts: (1) pull from the GitHub repository, and (2) download additional data inputs from the project Google Drive folder.
+The installation consists of two parts: (1) pull from the GitHub repository, and (2) download additional data inputs from the Zenodo directory.
 
 ## 3.1 Pull from the Github repository
 https://github.com/Power-Lab/AdvAppliedEnergy_Pathways_2025 -- this repository includes hte main optimization model, small data inputs, results, visualization/analysis scripts, and the generated plots. Additionally, we also include the shell scripts for running the model on a cloud computing system.
@@ -39,9 +39,9 @@ https://github.com/Power-Lab/AdvAppliedEnergy_Pathways_2025 -- this repository i
 The size of the GitHub repository is around 100 MB, so it should only take a few minutes to install with a "normal" internect connection.
 
 ## 3.2 Add additional data inputs from Zenodo
-Large data files in the `data_pkl`, `data_shp`, and `data_mat` folders are not stored on Github due to the file size limit. Instead, these files are stored on the project Google Drive folder. Before running the code, you will have to copy the files in the shared folder to the corresponding locations, by taking the following two steps:
+Large data files in the `data_pkl`, `data_shp`, and `data_mat` folders are not stored on Github due to the file size limit. Instead, these files are stored on the project Zenodo directory. Before running the code, you will have to copy the files in the shared folder to the corresponding locations, by taking the following two steps:
 
-1. Download the `data_pkl`, `data_shp`, and `data_mat` folders in [AdvAppliedEnergy_Pathways_2025] from Zenodo (https://doi.org/10.5281/zenodo.14907700)
+1. Download the `data_pkl`, `data_shp`, and `data_mat` folders in `AdvAppliedEnergy_Pathways_2025` from Zenodo (https://doi.org/10.5281/zenodo.14907700)
 2. Move the `data_pkl`, `data_shp`, and `data_mat` folders to the `AdvAppliedEnergy_Pathways_2025` directory
 3. Create a `data_res` folder in the `AdvAppliedEnergy_Pathways_2025` directory as a placeholder for outputs
 
